@@ -1,0 +1,307 @@
+:root {
+  --text: #202124;
+  --muted: #5f6368;
+  --line: #d7dde5;
+  --link: #1f5f99;
+  --accent: #2b6f6a;
+  --panel: #f7f9fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #eef1f4;
+}
+
+body {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 48px 40px;
+  background: #fff;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  margin: 0 -48px 32px;
+  padding: 15px 48px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, .96);
+  backdrop-filter: blur(8px);
+}
+
+.brand {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px 18px;
+  font-size: 14px;
+}
+
+.nav a {
+  color: #354052;
+  font-weight: 600;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+  gap: 36px;
+  align-items: start;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 8px;
+  color: #24436b;
+  font-size: 32px;
+}
+
+h2 {
+  margin: 34px 0 16px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+  color: #24436b;
+  font-size: 22px;
+}
+
+h3 {
+  margin: 0 0 8px;
+  color: #214b45;
+  font-size: 18px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+.title-line {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.email-line {
+  margin-top: -6px;
+  margin-bottom: 14px;
+}
+
+.portrait {
+  width: 230px;
+  max-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(32, 33, 36, .18);
+}
+
+.links,
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.links a,
+.paper-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 3px 9px;
+  border: 1px solid #b9c8d7;
+  border-radius: 4px;
+  background: #fbfdff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.links a.social-link {
+  min-height: 40px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.social-link img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.research-interests {
+  margin-top: 18px;
+}
+
+.research-interests h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.research-interests ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.research-interests li {
+  margin-bottom: 8px;
+}
+
+.collaboration-note {
+  margin-top: 10px;
+}
+
+.news {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.news li {
+  margin: 6px 0;
+}
+
+.date {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.publication {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #edf0f3;
+}
+
+.paper-figure {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #dce3ea;
+  border-radius: 4px;
+  background: var(--panel);
+}
+
+.figure-distribution {
+  height: 99px;
+}
+
+.figure-collapse {
+  height: 120px;
+}
+
+.figure-davam {
+  height: 76px;
+}
+
+.figure-dart {
+  height: 104px;
+}
+
+.paper-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.paper-title {
+  margin: 0 0 4px;
+  color: #246b02;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.authors {
+  margin-bottom: 3px;
+  font-style: italic;
+}
+
+.venue {
+  margin-bottom: 8px;
+  color: #30363d;
+}
+
+.plain-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.activity-block {
+  margin-bottom: 16px;
+}
+
+.activity-block h3 {
+  margin-bottom: 6px;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  body {
+    padding: 0 22px 30px;
+  }
+
+  .site-header {
+    position: static;
+    display: block;
+    margin: 0 -22px 26px;
+    padding: 14px 22px;
+  }
+
+  .nav {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .profile,
+  .publication {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    width: 190px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
