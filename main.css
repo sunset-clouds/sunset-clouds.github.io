@@ -147,6 +147,46 @@ p {
   font-weight: 600;
 }
 
+.bibtex-details {
+  position: relative;
+}
+
+.bibtex-details summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 3px 9px;
+  border: 1px solid #b9c8d7;
+  border-radius: 4px;
+  background: #fbfdff;
+  color: var(--link);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  list-style: none;
+}
+
+.bibtex-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.bibtex-details pre {
+  position: absolute;
+  z-index: 5;
+  top: 34px;
+  left: 0;
+  width: min(620px, 70vw);
+  overflow-x: auto;
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid #dce3ea;
+  border-radius: 4px;
+  background: #f8fafc;
+  color: var(--text);
+  font: 13px/1.4 Consolas, Monaco, monospace;
+  white-space: pre;
+}
+
 .links a.social-link {
   min-height: 40px;
   padding: 0;
@@ -214,6 +254,14 @@ p {
   background: var(--panel);
 }
 
+.figure-gar {
+  height: 126px;
+}
+
+.figure-vq {
+  height: 129px;
+}
+
 .figure-distribution {
   height: 99px;
 }
@@ -227,7 +275,7 @@ p {
 }
 
 .figure-dart {
-  height: 104px;
+  height: 140px;
 }
 
 .paper-figure img {
